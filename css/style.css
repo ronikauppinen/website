@@ -4,6 +4,7 @@ body,html{
     margin:0;
     padding:0;
     background-color: #191d2b;
+    overflow-x: hidden;
 }
 
 @-webkit-keyframes slidetounlock{
@@ -1451,3 +1452,20 @@ body,html{
         transform: translateY(-2000px);
     }
 }
+
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scroll-text {
+    font-size: clamp(3rem, 10vw, 10rem);
+    font-weight: 900;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1;
+    will-change: transform;
+  }
+  
