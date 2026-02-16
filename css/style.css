@@ -148,10 +148,6 @@ body,html{
 
 }
 
-.display-image {
-    border-radius: 50%;
-}
-
 .page-title {
     font-size: 18px;
     font-weight: 700;
@@ -190,7 +186,7 @@ body,html{
     transform: translate3d(0px, 0px, 0px) scale(1.015);
 }
 .first-item {
-    background-image: url("../assets/d234b6d9610b6caa7c93e326395690db.jpg");
+    background-image: url("../assets/info27.jpg");
 }
 .second-item {
     background-image: url("../assets/830564c7333904790107ee98d1089e28.jpg");
@@ -286,10 +282,8 @@ body,html{
 }
 
 .display-image{
-    width:96px;
-    height:96px;
+    width:100px;
     display:block;
-    border-radius:50%;
     -o-object-fit:cover;
     object-fit:cover
 }
