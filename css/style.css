@@ -1,15 +1,13 @@
-body,html{
-    -ms-scroll-chaining:none;
-    overscroll-behavior:none;
-    margin:0;
-    padding:0;
-    background:
-  linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.45),
-    rgba(0,0,0,0.15)
-  ),
-  url("../assets/test.jpg") center / cover no-repeat;
+body, html {
+    -ms-scroll-chaining: none;
+    overscroll-behavior: none;
+    margin: 0;
+    padding: 0;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -186,13 +184,10 @@ body,html{
     transform: translate3d(0px, 0px, 0px) scale(1.015);
 }
 .first-item {
-    background-image: url("../assets/info27.jpg");
-}
-.second-item {
-    background-image: url("../assets/830564c7333904790107ee98d1089e28.jpg");
+    background-color: white;
 }
 .page-item {
-    border: 0px solid #FFFFFF;
+    border: 0px solid #fffdfd;
     border-radius: 8px;
    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
 }
@@ -212,11 +207,11 @@ body,html{
 }
 
 .page-text-color {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .social-icon-fill path, .social-icon-fill circle, .social-icon-fill rect {
-    fill: #fff;
+    fill: rgb(0, 0, 0);
 }
 
 .page-overlay-btn {
@@ -430,7 +425,7 @@ body,html{
 }
 
 .item-title{
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 800;
     width:55%;
     word-break:break-word
@@ -559,11 +554,15 @@ body,html{
   }
   
   .scroll-text {
+    display: inline-flex;
     font-size: clamp(3rem, 10vw, 10rem);
     font-weight: 900;
     color: #ffffff;
-    display: inline-block;
     line-height: 1;
     will-change: transform;
+  }
+  
+  .scroll-text span {
+    padding-right: 4rem; /* spacing between loops */
   }
   
