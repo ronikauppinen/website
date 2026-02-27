@@ -30,7 +30,13 @@ const images = [
   "assets/G1.png",
   "assets/info55.jpg",
   "assets/info38.jpg",
-  "assets/test.jpg"
+  "assets/test.jpg",
+  "assets/info77.jpg",
+  "assets/info30.jpg",
+  "assets/info42.jpg",
+  "assets/Drawing14.jpg",
+  "assets/Drawing11.jpg",
+  "assets/color38.jpg"
 ];
 
 let currentIndex = -1;
