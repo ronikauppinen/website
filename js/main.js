@@ -4,8 +4,6 @@ const speed = 1;
 
 function scroll() {
   pos -= speed;
-
-  // When first copy fully leaves, reset smoothly
   if (pos <= -text.children[0].offsetWidth) {
     pos = 0;
   }
@@ -59,9 +57,5 @@ function setRandomBackground() {
     url("${images[currentIndex]}")
   `;
 }
-
-// Set one immediately on load
 setRandomBackground();
-
-// Change every 60,000 ms (1 minute)
 setInterval(setRandomBackground, 30000);
