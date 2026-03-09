@@ -33,7 +33,6 @@ const images = [
   "assets/info30.jpg",
   "assets/info42.jpg",
   "assets/Drawing14.jpg",
-  "assets/Drawing11.jpg",
   "assets/color38.jpg"
 ];
 
