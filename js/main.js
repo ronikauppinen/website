@@ -27,6 +27,7 @@ const images = [
   "assets/a52.jpg",
   "assets/G1.png",
   "assets/info55.jpg",
+  "assets/info80.jpg",
   "assets/info38.jpg",
   "assets/test.jpg",
   "assets/info77.jpg",
