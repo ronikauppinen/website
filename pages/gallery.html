@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link href="../css/style.css" rel="stylesheet">
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
-        <link rel="shortcut icon" href="../assets/Star 5.png" type="image/webp">
+        <link rel="shortcut icon" href="./assets/Star 5.png" type="image/webp">
         <link rel="apple-touch-icon" sizes="180x180" href="">
         <link rel="icon" href="../assets/Star 5.png" type="image/webp">
         <title>slipping_cheese links</title>
@@ -15,6 +15,7 @@
         <img class="lightbox-img" id="lightbox-img">
       </div>
     <body>
+          <div class="min-h-full" style="background-color: #222; width: 100%;">
        
         <div class="scroll-container">
             <div class="scroll-text" id="scrollText">
@@ -26,15 +27,20 @@
               </span>
             </div>
           </div>
-          <div class="min-h-full" id="background">
+          <div class="mt-48 page-full-wra relative ">
+          <input type="hidden" value="creator-page" id="page-type">
+                <img class="display-image m-auto" style="margin-bottom: 20px;" data-src="assets/images/logo.png" src="../assets/Star 5.png" alt="my photo"/>
           
           <button class="back-btn" onclick="window.location.href='/index.html'">
             ← Back
           </button>
 
             
-
                 <div class="gallery">
+                    <img src="/assets/info86.jpg">
+                    <img src="/assets/info90.jpg">
+                    <img src="/assets/info91.jpg">
+                    <img src="/assets/info89.jpg">
                     <img src="/assets/a48.jpg">
                     <img src="/assets/info13.jpg">
                     <img src="/assets/info27.jpg">
@@ -43,6 +49,7 @@
                     <img src="/assets/info47.jpg">
                     <img src="/assets/info17.jpg">
                     <img src="/assets/a52.jpg">
+                    <img src="/assets/color38.jpg">
                     <img src="/assets/G1.png">
                     <img src="/assets/info55.jpg">
                     <img src="/assets/info80.jpg">
@@ -52,18 +59,53 @@
                     <img src="/assets/info30.jpg">
                     <img src="/assets/info42.jpg">
                     <img src="/assets/Drawing14.jpg">
-                    <img src="/assets/color38.jpg">
-                    <img src="/assets/info86.jpg">
-                    <img src="/assets/info90.jpg">
-                    <img src="/assets/info91.jpg">
-                    <img src="/assets/info89.jpg">
                   </div>
    
                 </div>
+              </div>
     </body>
 
    
-    <script  src="../js/main.js"></script>
+    <script >
+      const text = document.getElementById("scrollText");
+let pos = 0;
+const speed = 1;
+
+function scroll() {
+  pos -= speed;
+  if (pos <= -text.children[0].offsetWidth) {
+    pos = 0;
+  }
+
+  text.style.transform = `translateX(${pos}px)`;
+
+  requestAnimationFrame(scroll);
+}
+
+scroll();
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("lightbox-close");
+
+document.querySelectorAll(".gallery img").forEach(img => {
+  img.style.cursor = "pointer";
+  img.onclick = () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  };
+});
+
+closeBtn.onclick = () => {
+  lightbox.style.display = "none";
+};
+
+lightbox.onclick = (e) => {
+  if (e.target !== lightboxImg) {
+    lightbox.style.display = "none";
+  }
+};
+    </script>
   
 
 </html>

@@ -365,6 +365,10 @@ body, html {
     z-index:10;
     padding-bottom:176px
 }
+.page-full-wra{
+    z-index:10;
+    padding-bottom:176px
+}
 .page-item-wrap{
     transition:transform .15s cubic-bezier(.17,.67,.29,2.71) 0s
 }
