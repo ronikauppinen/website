@@ -17,6 +17,7 @@ scroll();
 
 
 const images = [
+  "assets/a11.jpg",
   "assets/a48.jpg",
   "assets/info13.jpg",
   "assets/info27.jpg",
@@ -34,6 +35,7 @@ const images = [
   "assets/info30.jpg",
   "assets/info42.jpg",
   "assets/Drawing14.jpg",
+  "assets/Drawing.jpg",
   "assets/color38.jpg",
   "assets/info86.jpg",
   "assets/info90.jpg",
