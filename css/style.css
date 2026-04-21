@@ -499,6 +499,7 @@ body, html {
 }
 
 .item-title{
+    text-transform: uppercase;
     color: white;
     font-weight: 900;
     width:70%;
