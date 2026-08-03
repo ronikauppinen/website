@@ -46,7 +46,8 @@ const images = [
   "assets/info111.jpg",
   "assets/info114.jpg",
   "assets/info130.jpg",
-  "assets/info138.jpg"
+  "assets/info138.jpg",
+  "assets/info142.jpg"
 ];
 
 let currentIndex = -1;
